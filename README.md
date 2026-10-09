@@ -1,4 +1,4 @@
-# Annapoorneshwari Andhra Mess — Static Business Website
+# Annapoorneshwari Andhra Mess — Business Website
 
 A simple, fast-loading, mobile-responsive static website for **Annapoorneshwari Andhra Mess**, an authentic Andhra-style restaurant and mess serving South Indian food in Banashankari 6th Stage, Bengaluru.
 
