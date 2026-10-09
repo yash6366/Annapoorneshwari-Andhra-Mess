@@ -1,0 +1,19 @@
+{
+  "name": "annapoorneshwari-andhra-mess",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official website for Annapoorneshwari Andhra Mess, Bengaluru",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "andhra-mess",
+    "restaurant",
+    "bengaluru",
+    "south-indian-food"
+  ],
+  "author": "Annapoorneshwari Andhra Mess",
+  "license": "UNLICENSED"
+}
