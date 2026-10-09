@@ -8,7 +8,7 @@ A simple, fast-loading, mobile-responsive static website for **Annapoorneshwari 
 
 - **Business Name**: Annapoorneshwari Andhra Mess
 - **Business Type**: Andhra-style restaurant & mess serving authentic South Indian meals, banana leaf bhojanam, tiffins, and Andhra spice specialties.
-- **Location**: Site No. 15, 100 Feet Road, Banashankari 6th Stage, 4th Block, Bengaluru, Karnataka 560109, India.
+- **Location**: Site No. 15, 100 Feet Road, Banashankari 6th Stage, 4th Block, Bengaluru, Karnataka 560109, India ([Google Maps](https://www.google.com/maps/place/Annapoorneshwari+Andhra+Mess/@12.8790671,77.5118437,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3f7d78a636d7:0xa7f9b78016611918!8m2!3d12.8790671!4d77.5118437!16s%2Fg%2F11fk3_mrsl))
 - **Contact Number**: `+91 9535776435`
 - **WhatsApp**: `+91 9535776435` ([https://wa.me/919535776435](https://wa.me/919535776435))
 - **Instagram**: [`@__andhra__mess__`](https://www.instagram.com/__andhra__mess__/)

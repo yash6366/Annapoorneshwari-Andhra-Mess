@@ -473,55 +473,53 @@ button {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 252, 245, 0.94);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-border-gold);
+  background-color: var(--color-primary-dark);
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.4);
   z-index: 1000;
   transition: all var(--transition-normal);
-}
-
-.site-header.scrolled {
-  background-color: rgba(23, 77, 50, 0.97);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  border-bottom-color: var(--color-gold-dark);
 }
 
-.site-header.scrolled .brand-title {
+.site-header .brand-title {
   color: var(--color-gold-light);
 }
 
-.site-header.scrolled .brand-subtitle {
-  color: rgba(255, 248, 231, 0.8);
+.site-header .brand-subtitle {
+  color: var(--color-gold);
 }
 
-.site-header.scrolled .nav-link {
+.site-header .nav-link {
   color: var(--color-cream);
 }
 
-.site-header.scrolled .nav-link:hover,
-.site-header.scrolled .nav-link.active {
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
   color: var(--color-gold-light);
 }
 
-.site-header.scrolled .nav-link::after {
+.site-header .nav-link::after {
   background-color: var(--color-gold);
 }
 
-.site-header.scrolled .mobile-toggle span {
+.site-header .mobile-toggle span {
   background-color: var(--color-gold-light);
 }
 
-.site-header.scrolled .btn-outline-gold {
-  color: var(--color-gold-light);
-  border-color: var(--color-gold);
-  background-color: rgba(212, 175, 55, 0.15);
+.site-header .btn-outline-gold {
+  color: #FFF8E7 !important;
+  border-color: var(--color-gold) !important;
+  background-color: rgba(212, 175, 55, 0.18) !important;
+  font-weight: 700;
 }
 
-.site-header.scrolled .btn-outline-gold:hover {
-  background-color: var(--color-gold);
-  color: var(--color-primary-dark);
-  border-color: var(--color-gold);
+.site-header .btn-outline-gold svg {
+  fill: currentColor !important;
+}
+
+.site-header .btn-outline-gold:hover {
+  background-color: var(--color-gold) !important;
+  color: var(--color-primary-dark) !important;
+  border-color: var(--color-gold) !important;
   box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
 }
 
