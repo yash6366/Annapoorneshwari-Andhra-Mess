@@ -102,9 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Header Scroll Elevation & Back-to-Top Button Visibility
+  // 4. Header Scroll Elevation
   const header = document.querySelector('.site-header');
-  const backToTopBtn = document.getElementById('back-to-top');
 
   const handleWindowScroll = () => {
     const scrollY = window.scrollY;
@@ -117,28 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.remove('scrolled');
       }
     }
-
-    // Back to top button
-    if (backToTopBtn) {
-      if (scrollY > 350) {
-        backToTopBtn.classList.add('visible');
-      } else {
-        backToTopBtn.classList.remove('visible');
-      }
-    }
   };
 
   window.addEventListener('scroll', handleWindowScroll, { passive: true });
   handleWindowScroll();
-
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  }
 
   // 5. Active Link Scroll Spy using IntersectionObserver
   const sections = document.querySelectorAll('section[id]');
@@ -168,6 +149,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     sections.forEach(section => sectionObserver.observe(section));
+  }
+
+  // 6. Floating WhatsApp Visibility Toggle (Hidden in Contact section & Footer)
+  const floatingWhatsappBtn = document.querySelector('.floating-whatsapp-btn');
+  const contactSection = document.getElementById('contact');
+  const footerElement = document.querySelector('.site-footer');
+
+  if (floatingWhatsappBtn && 'IntersectionObserver' in window) {
+    const contactObserver = new IntersectionObserver((entries) => {
+      // Check if contact or footer is intersecting
+      const isContactOrFooterVisible = entries.some(entry => entry.isIntersecting);
+      if (isContactOrFooterVisible) {
+        floatingWhatsappBtn.classList.add('hidden-in-contact');
+      } else {
+        // Also verify bounding client rect in case of partial scroll
+        const contactRect = contactSection ? contactSection.getBoundingClientRect() : null;
+        const footerRect = footerElement ? footerElement.getBoundingClientRect() : null;
+        const isNearBottom = (contactRect && contactRect.top < window.innerHeight && contactRect.bottom > 0) ||
+                             (footerRect && footerRect.top < window.innerHeight);
+        if (isNearBottom) {
+          floatingWhatsappBtn.classList.add('hidden-in-contact');
+        } else {
+          floatingWhatsappBtn.classList.remove('hidden-in-contact');
+        }
+      }
+    }, {
+      root: null,
+      threshold: [0, 0.05, 0.2]
+    });
+
+    if (contactSection) contactObserver.observe(contactSection);
+    if (footerElement) contactObserver.observe(footerElement);
   }
 
   // 6. Interactive Menu Poster Lightbox Modal
