@@ -512,6 +512,19 @@ button {
   background-color: var(--color-gold-light);
 }
 
+.site-header.scrolled .btn-outline-gold {
+  color: var(--color-gold-light);
+  border-color: var(--color-gold);
+  background-color: rgba(212, 175, 55, 0.15);
+}
+
+.site-header.scrolled .btn-outline-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--color-primary-dark);
+  border-color: var(--color-gold);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+}
+
 .navbar {
   display: flex;
   align-items: center;
