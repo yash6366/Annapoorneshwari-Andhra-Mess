@@ -2307,16 +2307,9 @@ button {
     display: block;
   }
 
+  /* Hide floating WhatsApp button on mobile as it's included in the bottom sticky action bar */
   .floating-whatsapp-btn {
-    bottom: 75px;
-    right: 20px;
-    width: 48px;
-    height: 48px;
-  }
-
-  .floating-whatsapp-btn svg {
-    width: 26px;
-    height: 26px;
+    display: none !important;
   }
 
   .menu-poster-zoom-hint {
