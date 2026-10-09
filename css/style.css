@@ -72,14 +72,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 85px;
+  scroll-padding-top: 96px;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
 
 /* Ensure each section aligns smoothly below sticky header when clicked */
 section[id], header[id], main > section {
-  scroll-margin-top: 85px;
+  scroll-margin-top: 96px;
 }
 
 body {
@@ -99,9 +99,7 @@ body.nav-open {
 /* Mobile & Touch Press Feedback */
 .btn:active,
 .sticky-action-btn:active,
-.footer-social-btn:active,
-.social-pill-link:active,
-.back-to-top-btn:active {
+.footer-social-btn:active {
   transform: scale(0.96) !important;
 }
 
@@ -344,33 +342,6 @@ button {
   box-shadow: 0 6px 18px rgba(11, 128, 67, 0.35);
 }
 
-.social-pill-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.25rem 0.75rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  border-radius: var(--radius-full);
-  color: var(--color-gold-light);
-  font-size: 0.78rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all var(--transition-normal);
-}
-
-.social-pill-link:hover {
-  background: rgba(212, 175, 55, 0.25);
-  color: #ffffff;
-  transform: translateY(-1px);
-}
-
-.social-pill-link svg {
-  width: 13px;
-  height: 13px;
-  fill: currentColor;
-}
-
 .contact-social-card {
   margin-top: 1.4rem;
   padding-top: 1.25rem;
@@ -484,56 +455,6 @@ button {
   font-size: 0.88rem;
 }
 
-/* --------------------------------------------------------------------------
-   Top Notification Banner
-   -------------------------------------------------------------------------- */
-.top-banner {
-  background-color: var(--color-primary-dark);
-  color: var(--color-gold-light);
-  font-size: 0.85rem;
-  padding: 0.45rem 1rem;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-}
-
-.top-banner-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.top-banner-info {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.top-banner-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--color-gold-light);
-}
-
-.top-banner-item a {
-  color: var(--color-cream);
-}
-
-.top-banner-item a:hover {
-  color: var(--color-gold);
-}
-
-.top-banner-item svg {
-  width: 14px;
-  height: 14px;
-  fill: var(--color-gold);
-}
-
-/* --------------------------------------------------------------------------
-   Header & Navigation
-   -------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------
    Header & Navigation
    -------------------------------------------------------------------------- */
@@ -2217,10 +2138,6 @@ button {
     scroll-margin-top: 72px;
   }
 
-  .top-banner {
-    display: none;
-  }
-
   .mobile-toggle {
     display: flex;
   }
@@ -2377,13 +2294,6 @@ button {
   .floating-whatsapp-btn svg {
     width: 26px;
     height: 26px;
-  }
-
-  .back-to-top-btn {
-    bottom: 75px;
-    right: 78px;
-    width: 44px;
-    height: 44px;
   }
 
   .menu-poster-zoom-hint {

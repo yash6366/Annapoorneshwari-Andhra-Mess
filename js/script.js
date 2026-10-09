@@ -5,7 +5,7 @@
  * - Responsive Mobile Drawer with Backdrop & Scroll-lock
  * - Precision Smooth Scroll with Dynamic Header Offset
  * - Active Navigation Scroll Spy
- * - Floating Back-to-Top Button
+ * - Floating WhatsApp Visibility Toggle
  * - Interactive Menu Poster Lightbox Modal
  */
 
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
   const navBackdrop = document.getElementById('nav-backdrop');
-  const navLinks = document.querySelectorAll('.nav-link, .footer-links a');
 
   const closeMobileMenu = () => {
     if (navMenu && navMenu.classList.contains('open')) {
@@ -183,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footerElement) contactObserver.observe(footerElement);
   }
 
-  // 6. Interactive Menu Poster Lightbox Modal
+  // 7. Interactive Menu Poster Lightbox Modal
   const menuPosterTrigger = document.getElementById('menu-poster-trigger');
   const menuLightbox = document.getElementById('menu-lightbox');
   const lightboxCloseBtn = document.getElementById('lightbox-close-btn');

@@ -42,8 +42,10 @@ annapoorna-andhra-mess/
 │       ├── logo.png                 # Official Annapoorneshwari Andhra Mess brand logo & emblem
 │       ├── hero-meal.jpg            # High-res authentic Andhra banana leaf meal photography
 │       ├── andhra-meals.jpg         # Authentic Andhra Bhojanam presentation
-│       ├── south-indian-tiffin.jpg  # Traditional South Indian tiffin & dosas
+│       ├── menu-chart.jpg           # Official menu chart & high-resolution lightbox poster
 │       └── favicon.svg              # Traditional vector favicon
+├── 404.html                # Custom 404 Not Found error page
+├── vercel.json             # Vercel deployment caching & security headers configuration
 └── README.md               # Project documentation & deployment guides
 ```
 
