@@ -32,7 +32,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet (Cache-busted) -->
-  <link rel="stylesheet" href="css/style.css?v=2.2">
+  <link rel="stylesheet" href="css/style.css?v=4.3">
 
   <!-- Schema.org Structured Data (Restaurant / LocalBusiness) -->
   <script type="application/ld+json">
@@ -112,20 +112,20 @@
           <li><a href="#about" class="nav-link">About Us</a></li>
           <li><a href="#food" class="nav-link">Our Food</a></li>
           <li><a href="#specialties" class="nav-link">Specialties</a></li>
-          <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
           <li><a href="#location" class="nav-link">Location</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
 
         <!-- Navigation Actions -->
         <div class="nav-actions">
-          <a href="tel:+919535776435" class="btn btn-outline-gold btn-sm" aria-label="Call restaurant" style="color: #FFF8E7 !important; border-color: #D4AF37 !important; background-color: rgba(212, 175, 55, 0.18) !important; font-weight: 700;">
-            <svg viewBox="0 0 24 24" aria-hidden="true" style="fill: #FFF8E7 !important;"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            Call Now
+          <a href="tel:+919535776435" class="btn btn-outline-gold btn-sm" aria-label="Call restaurant">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>Call Now</span>
           </a>
           <a href="https://www.google.com/maps/place/Annapoorneshwari+Andhra+Mess/@12.8790671,77.5118437,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3f7d78a636d7:0xa7f9b78016611918!8m2!3d12.8790671!4d77.5118437!16s%2Fg%2F11fk3_mrsl" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Get Directions
+            <span>Get Directions</span>
           </a>
         </div>
 
@@ -138,6 +138,9 @@
       </nav>
     </div>
   </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
   <main id="main-content">
     <!-- ======================================================================
@@ -297,8 +300,12 @@
 
         <!-- Official Menu Chart Poster -->
         <div class="menu-poster-showcase">
-          <div class="menu-poster-frame">
+          <div class="menu-poster-frame" id="menu-poster-trigger" role="button" tabindex="0" aria-label="Click to enlarge menu chart">
             <img src="assets/images/menu-chart.jpg" alt="Annapoorneshwari Andhra Mess Official Menu Chart - Morning, Afternoon, and Dinner Offerings" width="1200" height="800" loading="lazy">
+            <div class="menu-poster-zoom-hint">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path fill="currentColor" d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
+              <span>Tap / Click to View Full Menu</span>
+            </div>
           </div>
         </div>
 
@@ -398,9 +405,9 @@
               <!-- Specialty Item 1 -->
               <div class="specialty-item">
                 <span class="specialty-badge">Signature Andhra Bhojanam</span>
-                <h3 class="specialty-name">Unlimited Andhra Meals</h3>
+                <h3 class="specialty-name">Andhra Meals</h3>
                 <p class="specialty-text">
-                  Served with aromatic sona masoori rice, fresh desi ghee, kandi podi, daily pappu, sambar, rasam, curd, and daily spicy curries.
+                  Served with aromatic sona masoori rice, daily pappu, sambar, rasam, curd, and daily spicy curries.
                 </p>
                 <div class="specialty-timing">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
@@ -410,14 +417,14 @@
 
               <!-- Specialty Item 2 -->
               <div class="specialty-item">
-                <span class="specialty-badge">Traditional Spice Pairing</span>
-                <h3 class="specialty-name">Podi &amp; Ghee Rice Combo</h3>
+                <span class="specialty-badge">Authentic Andhra Non-Veg Specials</span>
+                <h3 class="specialty-name">Chicken Biryani, Chicken Curry &amp; Mutton Curry</h3>
                 <p class="specialty-text">
-                  The beloved Andhra classic — steaming rice blended with roasted spiced lentil gunpowder and melted golden ghee.
+                  Experience the bold, traditional flavours of Andhra with aromatic Chicken Biryani, spicy Chicken Curry, and rich Mutton Curry, prepared using authentic Andhra spices and traditional cooking methods.
                 </p>
                 <div class="specialty-timing">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                  Served with All Full Meals
+                  Authentic Andhra Style • Traditional Spices • Homemade Taste
                 </div>
               </div>
 
@@ -638,13 +645,11 @@
             <h3 class="contact-social-title">Stay Connected &amp; Daily Updates</h3>
             <p class="contact-social-desc">Follow our food stories on Instagram or join our WhatsApp Channel for daily special announcements!</p>
             <div class="contact-social-btns">
-              <a href="https://www.instagram.com/__andhra__mess__/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram" id="btn-contact-instagram">
+              <a href="https://www.instagram.com/__andhra__mess__/" target="_blank" rel="noopener noreferrer" class="contact-social-icon-btn btn-instagram" id="btn-contact-instagram" aria-label="Instagram Profile: @__andhra__mess__" title="Follow us on Instagram (@__andhra__mess__)">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                Instagram (@__andhra__mess__)
               </a>
-              <a href="https://whatsapp.com/channel/0029VbCTgRv0rGiNJuyyPO2N" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-channel" id="btn-contact-channel">
+              <a href="https://whatsapp.com/channel/0029VbCTgRv0rGiNJuyyPO2N" target="_blank" rel="noopener noreferrer" class="contact-social-icon-btn btn-whatsapp-channel" id="btn-contact-channel" aria-label="Join WhatsApp Channel" title="Join our WhatsApp Channel for Daily Specials">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.175 8.175 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.19.53-1.06 1.04-1.47 1.08-.38.04-.88.18-2.88-.65-1.71-.7-2.81-2.45-2.89-2.57-.08-.11-.69-.92-.69-1.75 0-.83.43-1.24.59-1.4.15-.17.34-.21.45-.21.11 0 .23 0 .33.01.1.01.24-.04.38.29.14.34.49 1.19.53 1.28.04.08.07.19.01.3-.06.11-.09.19-.19.3-.09.11-.2.25-.29.33-.1.1-.21.21-.09.41.12.21.53.88 1.14 1.42.79.7 1.45.92 1.66 1.02.21.1.33.09.45-.05.12-.14.53-.62.67-.83.14-.21.28-.18.47-.11.19.07 1.2.57 1.41.67.21.1.35.15.4.24.05.09.05.52-.14 1.05z"/></svg>
-                Join WhatsApp Channel
               </a>
             </div>
           </div>
@@ -762,7 +767,23 @@
     </div>
   </aside>
 
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top" title="Back to Top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- Menu Lightbox Modal -->
+  <div class="menu-lightbox" id="menu-lightbox" role="dialog" aria-modal="true" aria-label="Full Menu Image Viewer">
+    <div class="lightbox-overlay" id="lightbox-close-overlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close menu image view">&times;</button>
+      <div class="lightbox-content">
+        <img src="assets/images/menu-chart.jpg" alt="Annapoorneshwari Andhra Mess Official Menu Chart - Full High Resolution" id="lightbox-image">
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript (Cache-busted) -->
-  <script src="js/script.js?v=2.1" defer></script>
+  <script src="js/script.js?v=3.0" defer></script>
 </body>
 </html>
